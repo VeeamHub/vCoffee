@@ -1,0 +1,19 @@
+Page {
+    font-size: 17;
+}
+.jobtemplate {
+    width:100%;
+}
+.jobdate {
+    font-size:12;
+    font-style: italic;
+    padding-left:10px;
+}
+.jobtitle {
+    font-size:17;
+    font-weight: 700;
+    padding-left:10px;
+}
+Image {
+    margin: 2px;
+}

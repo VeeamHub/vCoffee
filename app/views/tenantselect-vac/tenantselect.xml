@@ -1,0 +1,10 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"  class="page" loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Tenant Select" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="p-20">
+        <ListPicker items="{{ tenants }}" id="tenantPicker"></ListPicker>
+        <Button text="Filter" tap="filterTenant" />
+    </StackLayout>
+</Page>

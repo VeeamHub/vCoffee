@@ -1,0 +1,1 @@
+ls | ? { $_.name -match "drawable" } | % { cd $_.name;ls | % { mv $_.name ($_.name.Replace("-","_")) };cd .. }

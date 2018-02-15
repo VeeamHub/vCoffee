@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"  class="page" loaded="loaded" navigatedTo="navstart" navigatingFrom="navstop">
+    <Page.actionBar>
+        <ActionBar title="{{ 'Job : '+name }}" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="p-20">
+        <GridLayout columns="{{''+progress+'*,'+(100-progress)+'*'}}" rows="40" height="40" >
+            <StackLayout class="progressgreen" col="0" verticalAlignment="center" horizontalAlignment="left"><Label text="{{ (progress > 10)?(progress):'' }}" textWrap="true"   /></StackLayout>
+            <StackLayout class="progressgrey" col="1" verticalAlignment="center" horizontalAlignment="left"><Label text="" textWrap="true"   /></StackLayout>
+        </GridLayout>
+        <Label text="{{ status }}" textWrap="true"  />
+        <Label text="{{ starttime }}" textWrap="true"  />
+        <Label text="{{ lastrun }}" textWrap="true"  />
+        <Label text="{{ state }}" textWrap="true"  />
+        <Label text="{{ progress+'% completed' }}" textWrap="true"  />
+
+        <!--<Button text="Refresh" tap="refresh" />-->
+        <Button text="Start Job" tap="startJob" />
+        <Button text="Stop Job" tap="stopJob" />
+    </StackLayout>
+</Page>

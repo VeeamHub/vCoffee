@@ -1,0 +1,17 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="loaded" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="Login" icon="res://logo" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20">
+        <Image src="res://logo_login" stretch="none"  verticalAlignment="center" horizontalAlignment="center" /> 
+        <TextField id="apiurl" text="{{ apiurl }}" hint="API URL" keyboardType="url"  autocorrect="false" autocapitalizationType="none" />
+        <TextField id="login" text="{{ login }}" hint="Login"  autocorrect="false" autocapitalizationType="none" />
+        <TextField id="password" text="{{ password }}" hint="Password" secure="true" />
+
+        <Button text="Login" tap="login" id="btnlogin" />
+    </StackLayout>
+</Page>

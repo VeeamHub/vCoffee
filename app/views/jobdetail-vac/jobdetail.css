@@ -1,0 +1,15 @@
+Page {
+    font-size: 17;
+}
+.progressgreen {
+    background: #c3efc3;
+    color:#435043;
+    width: 100%;
+    height:100%;
+    padding-left:10;
+}
+.progressgrey {
+    background: #bfbfbf;
+    width: 100%;
+    height:100%;
+}

@@ -1,0 +1,25 @@
+{
+	"description": "vCoffee",
+	"license": "MIT license",
+	"readme": "vCoffee",
+	"repository": "https://github.com/veeamhub/vCoffee",
+	"nativescript": {
+		"id": "org.nativescript.vCoffee",
+		"tns-android": {
+			"version": "3.4.1"
+		}
+	},
+	"dependencies": {
+		"base-64": "^0.1.0",
+		"nativescript-theme-core": "~1.0.4",
+		"nativescript-xmlobjects": "^1.1.4",
+		"tns-core-modules": "~3.4.0",
+		"utf8": "^3.0.0"
+	},
+	"devDependencies": {
+		"babel-traverse": "6.4.5",
+		"babel-types": "6.4.5",
+		"babylon": "6.4.5",
+		"lazy": "1.0.11"
+	}
+}

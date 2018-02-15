@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"  class="page" loaded="loaded">
+    <Page.actionBar>
+        <ActionBar title="Jobs" icon="" class="action-bar">
+          <ActionItem tap="selectTenant" ios.systemIcon="2" ios.position="right" android.position="actionBar" text="Tenants"></ActionItem>
+          <ActionItem tap="refreshPage" ios.systemIcon="13" ios.position="right" android.position="actionBar" text="Refresh"></ActionItem>
+        </ActionBar>
+    </Page.actionBar>
+    
+        <ListView items="{{ jobs }}"   id="joblist" itemTap="jobtap">
+            <ListView.itemTemplate>
+                    <GridLayout columns="auto, auto, *" rows="*,*,*" >
+                        <StackLayout orientation="vertical"  col="0" row="0" rowSpan="3"  verticalAlignment="center" horizontalAlignment="center">
+                            <Image src="{{ statusicon }}" stretch="none"  verticalAlignment="center" horizontalAlignment="center" /> 
+                        </StackLayout>
+                        <StackLayout orientation="vertical" col="1" row="0" rowSpan="3"  verticalAlignment="center" horizontalAlignment="center">
+                            <Image src="{{ rpoicon }}" stretch="none"  verticalAlignment="center" horizontalAlignment="center"  /> 
+                        </StackLayout>
+                        <Label text=" {{ 'Tenant: '+tenantName }}" textWrap="true" col="2" row="0" class="jobtitle" />
+                        <Label text=" {{ name }}" textWrap="true" col="2" row="1" class="jobtitle" />
+                        <Label text=" {{ lastRun }}" textWrap="true" col="2" row="2" class="jobdate" />
+                        
+                    </GridLayout>
+            </ListView.itemTemplate>
+        </ListView>
+
+</Page>
